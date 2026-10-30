@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1580" viewBox="0 0 2400 1580">
+<defs>
+ <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.3" fill="#D9DFE7"/></pattern>
+ <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#334155" flood-opacity=".10"/></filter>
+ <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#64748B"/></marker>
+ <marker id="blue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#477DD1"/></marker>
+ <marker id="teal" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#249B91"/></marker>
+ <marker id="orange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#D18B24"/></marker>
+ <style>
+ .h1{font:700 38px Inter,Arial,sans-serif;fill:#1F2937}.sub{font:400 18px Inter,Arial,sans-serif;fill:#64748B}
+ .lane{font:700 21px Inter,Arial,sans-serif;fill:#263449}.head{font:700 16px Inter,Arial,sans-serif;fill:#263449}
+ .body{font:400 13px Inter,Arial,sans-serif;fill:#536176}.tiny{font:600 12px Inter,Arial,sans-serif;fill:#64748B}
+ .notehead{font:700 15px Inter,Arial,sans-serif;fill:#5A4A2D}.notetext{font:400 13px Inter,Arial,sans-serif;fill:#5C5140}
+ .line{fill:none;stroke:#64748B;stroke-width:3;marker-end:url(#arr);stroke-linecap:round;stroke-linejoin:round}
+ .patient{fill:none;stroke:#477DD1;stroke-width:3;marker-end:url(#blue);stroke-linecap:round;stroke-linejoin:round}
+ .ai{fill:none;stroke:#249B91;stroke-width:3;marker-end:url(#teal);stroke-linecap:round;stroke-linejoin:round}
+ .alt{fill:none;stroke:#D18B24;stroke-width:2.5;marker-end:url(#orange);stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8 6}
+ </style>
+</defs>
+<rect width="2400" height="1580" fill="#F8FAFC"/><rect width="2400" height="1580" fill="url(#dots)" opacity=".8"/>
+<rect x="48" y="34" width="2304" height="122" rx="22" fill="#FFF" stroke="#E2E8F0" filter="url(#shadow)"/>
+<circle cx="102" cy="82" r="23" fill="#DDF3EF"/><path d="M91 82h22M102 71v22" stroke="#249B91" stroke-width="4" stroke-linecap="round"/>
+<text x="145" y="83" class="h1">ONPOINT HEALTH CARE · Application Flow</text>
+<text x="147" y="118" class="sub">EHR workflow demonstrations + OnPoint Iris AI concept · clinician remains in control</text>
+<rect x="1890" y="67" width="405" height="42" rx="21" fill="#E5F6F2" stroke="#B4E5DC"/><text x="2092" y="94" text-anchor="middle" class="tiny" fill="#16786F">CONCEPT / DESIGN DEMONSTRATION</text>
+
+<!-- lanes -->
+<rect x="48" y="180" width="2304" height="320" rx="22" fill="#EEF5FF" stroke="#D3E2FA"/>
+<rect x="48" y="520" width="2304" height="350" rx="22" fill="#EAF8F5" stroke="#C5E9E2"/>
+<rect x="48" y="890" width="2304" height="350" rx="22" fill="#F2F5FB" stroke="#D9E0ED"/>
+<rect x="48" y="1260" width="2304" height="260" rx="22" fill="#FFF6E3" stroke="#F0DDAA"/>
+<rect x="72" y="201" width="370" height="45" rx="12" fill="#DCEBFF"/><text x="257" y="230" text-anchor="middle" class="lane">1 · Pre-Visit Preparation</text>
+<rect x="72" y="541" width="370" height="45" rx="12" fill="#D4F0EA"/><text x="257" y="570" text-anchor="middle" class="lane">2 · During the Visit</text>
+<rect x="72" y="911" width="370" height="45" rx="12" fill="#E1E8F3"/><text x="257" y="940" text-anchor="middle" class="lane">3 · Post-Visit Review</text>
+<rect x="72" y="1281" width="370" height="45" rx="12" fill="#FFE9B9"/><text x="257" y="1310" text-anchor="middle" class="lane">4 · Clinician Oversight</text>
+
+<!-- pre visit nodes -->
+<g filter="url(#shadow)">
+<rect x="475" y="285" width="240" height="92" rx="15" fill="#FFF" stroke="#80A9E5" stroke-width="2"/>
+<rect x="785" y="285" width="260" height="92" rx="15" fill="#FFF" stroke="#80A9E5" stroke-width="2"/>
+<rect x="1115" y="285" width="270" height="92" rx="15" fill="#FFF" stroke="#80A9E5" stroke-width="2"/>
+<rect x="1455" y="285" width="280" height="92" rx="15" fill="#DCEBFF" stroke="#80A9E5" stroke-width="2"/>
+<rect x="1805" y="285" width="270" height="92" rx="15" fill="#FFF" stroke="#80A9E5" stroke-width="2"/>
+<rect x="2140" y="285" width="170" height="92" rx="15" fill="#D4F0EA" stroke="#68BDAE" stroke-width="2"/>
+</g>
+<text x="595" y="319" text-anchor="middle" class="head">Open patient record</text><text x="595" y="342" text-anchor="middle" class="body">Clinician enters familiar EHR</text><text x="595" y="360" text-anchor="middle" class="body">workflow</text>
+<text x="915" y="319" text-anchor="middle" class="head">Gather available history</text><text x="915" y="342" text-anchor="middle" class="body">Relevant issues, medications,</text><text x="915" y="360" text-anchor="middle" class="body">labs and prior information</text>
+<text x="1250" y="319" text-anchor="middle" class="head">Organize information</text><text x="1250" y="342" text-anchor="middle" class="body">Group details by health issue;</text><text x="1250" y="360" text-anchor="middle" class="body">surface missing / missed items</text>
+<text x="1595" y="319" text-anchor="middle" class="head">Generate Iris AI summary</text><text x="1595" y="342" text-anchor="middle" class="body">Concise patient-history view</text><text x="1595" y="360" text-anchor="middle" class="body">for clinician preparation</text>
+<text x="1940" y="319" text-anchor="middle" class="head">Review summary</text><text x="1940" y="342" text-anchor="middle" class="body">Clinician checks context</text><text x="1940" y="360" text-anchor="middle" class="body">before the appointment</text>
+<text x="2225" y="319" text-anchor="middle" class="head">Visit ready</text><text x="2225" y="342" text-anchor="middle" class="body">Prepared</text><text x="2225" y="360" text-anchor="middle" class="body">discussion</text>
+<path d="M715 331H785 M1045 331H1115 M1385 331H1455 M1735 331H1805 M2075 331H2140" class="patient"/>
+<rect x="785" y="402" width="620" height="62" rx="12" fill="#FFF6D9" stroke="#E6CC7A"/>
+<text x="810" y="427" class="notehead">Information surfaced for review</text><text x="810" y="448" class="notetext">Prior issues • medication adherence / missed tablets • missing labs • earlier results</text>
+<path d="M1250 377V402" class="alt"/>
+
+<!-- during visit nodes -->
+<g filter="url(#shadow)">
+<rect x="475" y="625" width="240" height="92" rx="15" fill="#FFF" stroke="#74C6BA" stroke-width="2"/>
+<rect x="785" y="625" width="270" height="92" rx="15" fill="#FFF" stroke="#74C6BA" stroke-width="2"/>
+<rect x="1125" y="625" width="285" height="92" rx="15" fill="#D4F0EA" stroke="#74C6BA" stroke-width="2"/>
+<rect x="1480" y="625" width="280" height="92" rx="15" fill="#FFF" stroke="#74C6BA" stroke-width="2"/>
+<polygon points="1905,612 1990,671 1905,730 1820,671" fill="#FFF6E3" stroke="#D6A33A" stroke-width="2"/>
+<rect x="2040" y="625" width="270" height="92" rx="15" fill="#FFF" stroke="#74C6BA" stroke-width="2"/>
+</g>
+<text x="595" y="659" text-anchor="middle" class="head">Start consultation</text><text x="595" y="682" text-anchor="middle" class="body">Clinician meets patient</text><text x="595" y="700" text-anchor="middle" class="body">and conducts visit</text>
+<text x="920" y="659" text-anchor="middle" class="head">Iris listens to conversation</text><text x="920" y="682" text-anchor="middle" class="body">Concept uses visit dialogue</text><text x="920" y="700" text-anchor="middle" class="body">to assist documentation</text>
+<text x="1267" y="659" text-anchor="middle" class="head">Draft visit entries</text><text x="1267" y="682" text-anchor="middle" class="body">Suggest medications and tests</text><text x="1267" y="700" text-anchor="middle" class="body">for EHR entry</text>
+<text x="1620" y="659" text-anchor="middle" class="head">Clinician reviews draft</text><text x="1620" y="682" text-anchor="middle" class="body">Inspect each proposed entry</text><text x="1620" y="700" text-anchor="middle" class="body">before it is applied</text>
+<text x="1905" y="667" text-anchor="middle" class="head">Approve</text><text x="1905" y="686" text-anchor="middle" class="head">as is?</text>
+<text x="2175" y="659" text-anchor="middle" class="head">Update EHR</text><text x="2175" y="682" text-anchor="middle" class="body">Accepted entries</text><text x="2175" y="700" text-anchor="middle" class="body">are applied</text>
+<path d="M715 671H785 M1055 671H1125 M1410 671H1480 M1760 671H1820 M1990 671H2040" class="ai"/>
+<text x="2003" y="649" class="tiny" fill="#946515">YES</text>
+<rect x="1480" y="755" width="390" height="70" rx="12" fill="#FFF6D9" stroke="#E6CC7A"/>
+<text x="1675" y="782" text-anchor="middle" class="notehead">Edit or remove suggestions</text><text x="1675" y="804" text-anchor="middle" class="notetext">Clinician can change or delete draft entries</text>
+<path d="M1905 730V740H1675V755" class="alt"/>
+<path d="M1480 790H1440V738H1620V717" class="alt"/>
+<text x="1920" y="747" class="tiny" fill="#946515">NO / EDIT</text>
+
+<!-- post visit -->
+<g filter="url(#shadow)">
+<rect x="475" y="995" width="250" height="92" rx="15" fill="#FFF" stroke="#A6B7D3" stroke-width="2"/>
+<rect x="795" y="995" width="270" height="92" rx="15" fill="#FFF" stroke="#A6B7D3" stroke-width="2"/>
+<rect x="1135" y="995" width="285" height="92" rx="15" fill="#FFF" stroke="#A6B7D3" stroke-width="2"/>
+<rect x="1490" y="995" width="285" height="92" rx="15" fill="#E1E8F3" stroke="#A6B7D3" stroke-width="2"/>
+<rect x="1845" y="995" width="300" height="92" rx="15" fill="#FFF" stroke="#A6B7D3" stroke-width="2"/>
+</g>
+<text x="600" y="1029" text-anchor="middle" class="head">Review visit record</text><text x="600" y="1052" text-anchor="middle" class="body">Clinician checks updated</text><text x="600" y="1070" text-anchor="middle" class="body">visit information</text>
+<text x="930" y="1029" text-anchor="middle" class="head">Compare lab results</text><text x="930" y="1052" text-anchor="middle" class="body">Compare current results</text><text x="930" y="1070" text-anchor="middle" class="body">with previous results</text>
+<text x="1277" y="1029" text-anchor="middle" class="head">Summarize findings</text><text x="1277" y="1052" text-anchor="middle" class="body">Highlight normal / urgent</text><text x="1277" y="1070" text-anchor="middle" class="body">items and considerations</text>
+<text x="1632" y="1029" text-anchor="middle" class="head">Present review cues</text><text x="1632" y="1052" text-anchor="middle" class="body">Medication considerations</text><text x="1632" y="1070" text-anchor="middle" class="body">for clinician attention</text>
+<text x="1995" y="1029" text-anchor="middle" class="head">Clinician final review</text><text x="1995" y="1052" text-anchor="middle" class="body">Interpret and decide</text><text x="1995" y="1070" text-anchor="middle" class="body">next steps</text>
+<path d="M725 1041H795 M1065 1041H1135 M1420 1041H1490 M1775 1041H1845" class="line"/>
+<rect x="2150" y="1002" width="160" height="78" rx="13" fill="#D4F0EA" stroke="#74C6BA" stroke-width="2"/>
+<text x="2230" y="1031" text-anchor="middle" class="head">Decision</text><text x="2230" y="1053" text-anchor="middle" class="body">by clinician</text>
+<path d="M2145 1041H2150" class="ai"/>
+<rect x="795" y="1120" width="900" height="74" rx="12" fill="#FFF6D9" stroke="#E6CC7A"/>
+<text x="820" y="1147" class="notehead">Review signals</text><text x="820" y="1170" class="notetext">Lab trends • normal / urgent findings • medication considerations • items that may need follow-up</text>
+<path d="M1277 1087V1120" class="alt"/>
+
+<!-- oversight bottom -->
+<g filter="url(#shadow)">
+<rect x="475" y="1365" width="390" height="92" rx="15" fill="#FFF" stroke="#E1BD59" stroke-width="2"/>
+<rect x="925" y="1365" width="390" height="92" rx="15" fill="#FFF" stroke="#E1BD59" stroke-width="2"/>
+<rect x="1375" y="1365" width="390" height="92" rx="15" fill="#FFF" stroke="#E1BD59" stroke-width="2"/>
+<rect x="1825" y="1365" width="485" height="92" rx="15" fill="#FFE9B9" stroke="#E1BD59" stroke-width="2"/>
+</g>
+<text x="670" y="1400" text-anchor="middle" class="head">Human decision-making</text><text x="670" y="1424" text-anchor="middle" class="body">AI supports; clinician decides</text>
+<text x="1120" y="1400" text-anchor="middle" class="head">Editable AI suggestions</text><text x="1120" y="1424" text-anchor="middle" class="body">Accept, modify, or remove drafts</text>
+<text x="1570" y="1400" text-anchor="middle" class="head">Familiar EHR workflows</text><text x="1570" y="1424" text-anchor="middle" class="body">AI assistance sits alongside existing work</text>
+<text x="2067" y="1400" text-anchor="middle" class="head">Design principle</text><text x="2067" y="1424" text-anchor="middle" class="body">Reduce review effort without replacing clinical judgment</text>
+<path d="M670 1365V1338H257V1240" class="alt"/>
+<text x="48" y="1555" class="sub">ONPOINT HEALTH CARE · Portfolio reconstruction from project context · Not a clinical protocol or validated production workflow</text>
+</svg>
