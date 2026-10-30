@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1650" viewBox="0 0 2400 1650">
+<defs>
+ <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.35" fill="#D9DFE7"/></pattern>
+ <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#334155" flood-opacity=".11"/></filter>
+ <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#64748B"/></marker>
+ <marker id="blueArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#3B82D4"/></marker>
+ <marker id="greenArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#29966A"/></marker>
+ <marker id="orangeArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#D18B24"/></marker>
+ <style>
+ .h1{font:700 39px Inter,Arial,sans-serif;fill:#1F2937}.sub{font:400 18px Inter,Arial,sans-serif;fill:#64748B}
+ .lane{font:700 21px Inter,Arial,sans-serif;fill:#263449}.head{font:700 17px Inter,Arial,sans-serif;fill:#263449}
+ .body{font:400 14px Inter,Arial,sans-serif;fill:#536176}.tiny{font:600 12px Inter,Arial,sans-serif;fill:#64748B}
+ .notehead{font:700 15px Inter,Arial,sans-serif;fill:#51452E}.notetext{font:400 13px Inter,Arial,sans-serif;fill:#5C5140}
+ .line{fill:none;stroke:#64748B;stroke-width:3;marker-end:url(#arrow);stroke-linecap:round;stroke-linejoin:round}
+ .blue{fill:none;stroke:#3B82D4;stroke-width:3;marker-end:url(#blueArrow);stroke-linecap:round;stroke-linejoin:round}
+ .green{fill:none;stroke:#29966A;stroke-width:3;marker-end:url(#greenArrow);stroke-linecap:round;stroke-linejoin:round}
+ .orange{fill:none;stroke:#D18B24;stroke-width:2.5;marker-end:url(#orangeArrow);stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8 6}
+ </style>
+</defs>
+<rect width="2400" height="1650" fill="#F8FAFC"/><rect width="2400" height="1650" fill="url(#dots)" opacity=".78"/>
+<!-- header -->
+<rect x="48" y="34" width="2304" height="125" rx="22" fill="#FFFFFF" stroke="#E2E8F0" filter="url(#shadow)"/>
+<circle cx="103" cy="83" r="23" fill="#DCEBFF"/><path d="M93 83h20M103 73v20" stroke="#3B82D4" stroke-width="4" stroke-linecap="round"/>
+<text x="146" y="84" class="h1">KAPSTON SERVICES · Application Architecture</text>
+<text x="148" y="119" class="sub">Product ecosystem • Two mobile applications • Service discovery, request handling, and provider-side work</text>
+<rect x="1910" y="68" width="390" height="44" rx="22" fill="#FFF3D9" stroke="#E7CA83"/>
+<text x="2105" y="96" text-anchor="middle" class="tiny" fill="#946515">FUNCTIONAL / INFORMATION ARCHITECTURE</text>
+
+<!-- ecosystem overview -->
+<rect x="48" y="185" width="2304" height="210" rx="22" fill="#F0F5FF" stroke="#D3E2FA"/>
+<rect x="72" y="207" width="245" height="45" rx="12" fill="#DCEBFF"/><text x="194" y="236" text-anchor="middle" class="lane">1 · Product Ecosystem</text>
+<g filter="url(#shadow)">
+ <rect x="375" y="245" width="350" height="100" rx="17" fill="#FFFFFF" stroke="#78A9EB" stroke-width="2"/>
+ <rect x="890" y="245" width="350" height="100" rx="17" fill="#FFFFFF" stroke="#78A9EB" stroke-width="2"/>
+ <rect x="1400" y="245" width="350" height="100" rx="17" fill="#FFFFFF" stroke="#78A9EB" stroke-width="2"/>
+ <rect x="1910" y="245" width="350" height="100" rx="17" fill="#DCEBFF" stroke="#78A9EB" stroke-width="2"/>
+</g>
+<text x="550" y="279" text-anchor="middle" class="head">Customer Mobile App</text><text x="550" y="304" text-anchor="middle" class="body">Discover and request services</text><text x="550" y="324" text-anchor="middle" class="tiny">Customer-facing experience</text>
+<text x="1065" y="279" text-anchor="middle" class="head">Service Provider Mobile App</text><text x="1065" y="304" text-anchor="middle" class="body">Review service-related work</text><text x="1065" y="324" text-anchor="middle" class="tiny">Provider-facing experience</text>
+<text x="1575" y="279" text-anchor="middle" class="head">Service Categories</text><text x="1575" y="304" text-anchor="middle" class="body">Drivers • Watchmen • Security</text><text x="1575" y="324" text-anchor="middle" class="tiny">Other home / personal services</text>
+<text x="2085" y="279" text-anchor="middle" class="head">Connected Service Journey</text><text x="2085" y="304" text-anchor="middle" class="body">Customer need ↔ provider work</text><text x="2085" y="324" text-anchor="middle" class="tiny">High-level product relationship</text>
+<path d="M725 295H890" class="blue"/><path d="M1240 295H1400" class="line"/><path d="M1750 295H1910" class="green"/>
+
+<!-- customer IA lane -->
+<rect x="48" y="420" width="2304" height="335" rx="22" fill="#EEF5FF" stroke="#D3E2FA"/>
+<rect x="72" y="441" width="300" height="45" rx="12" fill="#DCEBFF"/><text x="222" y="470" text-anchor="middle" class="lane">2 · Customer App Architecture</text>
+<g filter="url(#shadow)">
+ <rect x="390" y="510" width="235" height="85" rx="14" fill="#FFFFFF" stroke="#78A9EB" stroke-width="2"/>
+ <rect x="690" y="510" width="250" height="85" rx="14" fill="#FFFFFF" stroke="#78A9EB" stroke-width="2"/>
+ <rect x="1005" y="510" width="250" height="85" rx="14" fill="#FFFFFF" stroke="#78A9EB" stroke-width="2"/>
+ <rect x="1320" y="510" width="250" height="85" rx="14" fill="#FFFFFF" stroke="#78A9EB" stroke-width="2"/>
+ <rect x="1635" y="510" width="250" height="85" rx="14" fill="#FFFFFF" stroke="#78A9EB" stroke-width="2"/>
+ <rect x="1950" y="510" width="315" height="85" rx="14" fill="#DCEBFF" stroke="#78A9EB" stroke-width="2"/>
+</g>
+<text x="507" y="543" text-anchor="middle" class="head">Entry &amp; Access</text><text x="507" y="567" text-anchor="middle" class="body">Open app / sign in if required</text>
+<text x="815" y="543" text-anchor="middle" class="head">Service Discovery</text><text x="815" y="567" text-anchor="middle" class="body">Browse service categories</text>
+<text x="1130" y="543" text-anchor="middle" class="head">Category Details</text><text x="1130" y="567" text-anchor="middle" class="body">Review relevant options</text>
+<text x="1445" y="543" text-anchor="middle" class="head">Selection</text><text x="1445" y="567" text-anchor="middle" class="body">Choose required service</text>
+<text x="1760" y="543" text-anchor="middle" class="head">Request Details</text><text x="1760" y="567" text-anchor="middle" class="body">Enter information needed</text>
+<text x="2107" y="543" text-anchor="middle" class="head">Submit / Confirm Request</text><text x="2107" y="567" text-anchor="middle" class="body">Review request before submission</text>
+<path d="M625 552H690 M940 552H1005 M1255 552H1320 M1570 552H1635 M1885 552H1950" class="blue"/>
+<rect x="390" y="635" width="545" height="75" rx="12" fill="#FFFFFF" stroke="#B7D1F4"/>
+<text x="415" y="661" class="head">Primary navigation / discovery content</text><text x="415" y="684" class="body">Service categories and relevant service options</text>
+<rect x="975" y="635" width="545" height="75" rx="12" fill="#FFFFFF" stroke="#B7D1F4"/>
+<text x="1000" y="661" class="head">Request information</text><text x="1000" y="684" class="body">Details needed to express the customer's service need</text>
+<rect x="1560" y="635" width="705" height="75" rx="12" fill="#FFFFFF" stroke="#B7D1F4"/>
+<text x="1585" y="661" class="head">Customer-facing outcome</text><text x="1585" y="684" class="body">A service request is submitted for the provider-side journey to continue</text>
+
+<!-- provider IA lane -->
+<rect x="48" y="780" width="2304" height="335" rx="22" fill="#ECF8F1" stroke="#CDEAD8"/>
+<rect x="72" y="801" width="330" height="45" rx="12" fill="#D4F0DF"/><text x="237" y="830" text-anchor="middle" class="lane">3 · Provider App Architecture</text>
+<g filter="url(#shadow)">
+ <rect x="390" y="870" width="250" height="85" rx="14" fill="#FFFFFF" stroke="#78C79A" stroke-width="2"/>
+ <rect x="705" y="870" width="250" height="85" rx="14" fill="#FFFFFF" stroke="#78C79A" stroke-width="2"/>
+ <rect x="1020" y="870" width="250" height="85" rx="14" fill="#FFFFFF" stroke="#78C79A" stroke-width="2"/>
+ <rect x="1335" y="870" width="250" height="85" rx="14" fill="#FFFFFF" stroke="#78C79A" stroke-width="2"/>
+ <rect x="1650" y="870" width="250" height="85" rx="14" fill="#FFFFFF" stroke="#78C79A" stroke-width="2"/>
+ <rect x="1965" y="870" width="300" height="85" rx="14" fill="#D4F0DF" stroke="#78C79A" stroke-width="2"/>
+</g>
+<text x="515" y="903" text-anchor="middle" class="head">Entry &amp; Access</text><text x="515" y="927" text-anchor="middle" class="body">Open provider app</text>
+<text x="830" y="903" text-anchor="middle" class="head">Work Area</text><text x="830" y="927" text-anchor="middle" class="body">View service-related information</text>
+<text x="1145" y="903" text-anchor="middle" class="head">Request Review</text><text x="1145" y="927" text-anchor="middle" class="body">Check request details</text>
+<text x="1460" y="903" text-anchor="middle" class="head">Response / Next Step</text><text x="1460" y="927" text-anchor="middle" class="body">Continue in app workflow</text>
+<text x="1775" y="903" text-anchor="middle" class="head">Service Coordination</text><text x="1775" y="927" text-anchor="middle" class="body">Align around request</text>
+<text x="2115" y="903" text-anchor="middle" class="head">Service Journey Continues</text><text x="2115" y="927" text-anchor="middle" class="body">Provider-side work progresses</text>
+<path d="M640 912H705 M955 912H1020 M1270 912H1335 M1585 912H1650 M1900 912H1965" class="green"/>
+<rect x="390" y="995" width="545" height="75" rx="12" fill="#FFFFFF" stroke="#B9E2C8"/>
+<text x="415" y="1021" class="head">Provider-facing navigation</text><text x="415" y="1044" class="body">Service-related work and request information</text>
+<rect x="975" y="995" width="545" height="75" rx="12" fill="#FFFFFF" stroke="#B9E2C8"/>
+<text x="1000" y="1021" class="head">Provider decision point</text><text x="1000" y="1044" class="body">Review whether the request can be fulfilled</text>
+<rect x="1560" y="995" width="705" height="75" rx="12" fill="#FFFFFF" stroke="#B9E2C8"/>
+<text x="1585" y="1021" class="head">Provider-facing outcome</text><text x="1585" y="1044" class="body">The next step follows the actual service workflow and provider response</text>
+
+<!-- shared product foundations -->
+<rect x="48" y="1140" width="2304" height="350" rx="22" fill="#FFF6E3" stroke="#F0DDAA"/>
+<rect x="72" y="1161" width="340" height="45" rx="12" fill="#FFE9B9"/><text x="242" y="1190" text-anchor="middle" class="lane">4 · Shared Product Foundations</text>
+<g filter="url(#shadow)">
+ <rect x="390" y="1240" width="330" height="112" rx="15" fill="#FFFFFF" stroke="#E1BD59" stroke-width="2"/>
+ <rect x="765" y="1240" width="330" height="112" rx="15" fill="#FFFFFF" stroke="#E1BD59" stroke-width="2"/>
+ <rect x="1140" y="1240" width="330" height="112" rx="15" fill="#FFFFFF" stroke="#E1BD59" stroke-width="2"/>
+ <rect x="1515" y="1240" width="330" height="112" rx="15" fill="#FFFFFF" stroke="#E1BD59" stroke-width="2"/>
+ <rect x="1890" y="1240" width="375" height="112" rx="15" fill="#FFE9B9" stroke="#E1BD59" stroke-width="2"/>
+</g>
+<text x="555" y="1274" text-anchor="middle" class="head">Service taxonomy</text><text x="555" y="1299" text-anchor="middle" class="body">Drivers, watchmen, security</text><text x="555" y="1319" text-anchor="middle" class="body">and other service categories</text>
+<text x="930" y="1274" text-anchor="middle" class="head">Request information</text><text x="930" y="1299" text-anchor="middle" class="body">Details needed to communicate</text><text x="930" y="1319" text-anchor="middle" class="body">the service requirement</text>
+<text x="1305" y="1274" text-anchor="middle" class="head">Separate role experiences</text><text x="1305" y="1299" text-anchor="middle" class="body">Customer and provider</text><text x="1305" y="1319" text-anchor="middle" class="body">interfaces serve different needs</text>
+<text x="1680" y="1274" text-anchor="middle" class="head">Journey continuity</text><text x="1680" y="1299" text-anchor="middle" class="body">Request details connect the</text><text x="1680" y="1319" text-anchor="middle" class="body">two sides of the service journey</text>
+<text x="2077" y="1274" text-anchor="middle" class="head">Design intent</text><text x="2077" y="1299" text-anchor="middle" class="body">Make service discovery and</text><text x="2077" y="1319" text-anchor="middle" class="body">provider-side work clear</text>
+
+<!-- scope / legend -->
+<rect x="390" y="1380" width="1875" height="74" rx="12" fill="#FFFFFF" stroke="#E5D7AD"/>
+<text x="415" y="1407" class="notehead">Scope &amp; assumptions</text>
+<text x="415" y="1430" class="notetext">This is a functional and information architecture based on available project context. Specific backend services, APIs, payment, chat, ratings, notifications, tracking, and exact provider states were not confirmed and are intentionally not asserted.</text>
+<line x1="415" y1="1472" x2="470" y2="1472" stroke="#3B82D4" stroke-width="3"/><text x="483" y="1477" class="tiny">Customer-side structure</text>
+<line x1="690" y1="1472" x2="745" y2="1472" stroke="#29966A" stroke-width="3"/><text x="758" y="1477" class="tiny">Provider-side structure</text>
+<line x1="965" y1="1472" x2="1020" y2="1472" stroke="#D18B24" stroke-width="2.5" stroke-dasharray="7 5"/><text x="1033" y="1477" class="tiny">Decision / alternate path</text>
+<text x="48" y="1618" class="sub">KAPSTON SERVICES · Portfolio artifact · Reconstructed from available project notes</text>
+</svg>
