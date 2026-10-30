@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1180" viewBox="0 0 1800 1180">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101419"/><stop offset="1" stop-color="#202830"/></linearGradient>
+<linearGradient id="gold"><stop stop-color="#f8d477"/><stop offset="1" stop-color="#d99a36"/></linearGradient>
+<filter id="shadow" x="-15%" y="-15%" width="130%" height="130%"><feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#000" flood-opacity=".22"/></filter>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10Z" fill="#d7a84c"/></marker>
+<style>
+.t{font:700 38px Arial,sans-serif;fill:#f7f4ed}.sub{font:18px Arial,sans-serif;fill:#adb8c0}.sec{font:700 15px Arial,sans-serif;fill:#e9bd61;letter-spacing:2px}
+.h{font:700 21px Arial,sans-serif;fill:#f7f4ed}.b{font:15px Arial,sans-serif;fill:#c6cfd4}.s{font:13px Arial,sans-serif;fill:#9eabb4}
+.card{fill:#202830;stroke:#39444d;stroke-width:1.5}.inner{fill:#171e24;stroke:#3c4851;stroke-width:1.2}
+.line{stroke:#d7a84c;stroke-width:3;fill:none;marker-end:url(#arrow)}.dash{stroke:#82909b;stroke-width:2.2;fill:none;stroke-dasharray:7 7;marker-end:url(#arrow)}
+</style></defs>
+<rect width="1800" height="1180" fill="url(#bg)"/>
+<circle cx="1630" cy="85" r="160" fill="#d99a36" opacity=".04"/><circle cx="1630" cy="85" r="110" fill="none" stroke="#e3b85b" opacity=".15"/>
+<text x="80" y="70" class="sec">RADIANT · PRODUCT FLOW ARCHITECTURE</text>
+<text x="80" y="124" class="t">From incoming inventory to multi-warehouse visibility</text>
+<text x="80" y="160" class="sub">A role-based warehouse management system for a TV manufacturer producing for multiple brands.</text>
+<text x="80" y="218" class="sec">01 / OPERATIONAL INVENTORY FLOW</text>
+<g filter="url(#shadow)">
+<rect x="80" y="250" width="330" height="245" rx="18" class="card"/><rect x="80" y="250" width="330" height="7" rx="3" fill="url(#gold)"/>
+<text x="105" y="300" class="sec">STEP 01</text><text x="105" y="341" class="h">Receptionist</text>
+<text x="105" y="376" class="b">• Records incoming products</text><text x="105" y="403" class="b">• Replaces the physical register</text><text x="105" y="430" class="b">• Captures item details for review</text>
+<rect x="105" y="453" width="278" height="25" rx="7" class="inner"/><text x="244" y="470" text-anchor="middle" class="s">Entry &amp; intake</text>
+<rect x="490" y="250" width="330" height="245" rx="18" class="card"/><rect x="490" y="250" width="330" height="7" rx="3" fill="url(#gold)"/>
+<text x="515" y="300" class="sec">STEP 02</text><text x="515" y="341" class="h">Supervisor</text>
+<text x="515" y="376" class="b">• Checks quantity and condition</text><text x="515" y="403" class="b">• Separates damaged items for return</text><text x="515" y="430" class="b">• Assigns storage location</text>
+<rect x="515" y="453" width="278" height="25" rx="7" class="inner"/><text x="654" y="470" text-anchor="middle" class="s">Quality check &amp; storage</text>
+<rect x="900" y="250" width="330" height="245" rx="18" class="card"/><rect x="900" y="250" width="330" height="7" rx="3" fill="url(#gold)"/>
+<text x="925" y="300" class="sec">STEP 03</text><text x="925" y="341" class="h">Warehouse Manager</text>
+<text x="925" y="376" class="b">• Oversees warehouse operations</text><text x="925" y="403" class="b">• Tracks incoming and available stock</text><text x="925" y="430" class="b">• Requests items / replenishment</text>
+<rect x="925" y="453" width="278" height="25" rx="7" class="inner"/><text x="1064" y="470" text-anchor="middle" class="s">Operations &amp; stock control</text>
+<rect x="1310" y="250" width="410" height="245" rx="18" class="card"/><rect x="1310" y="250" width="410" height="7" rx="3" fill="url(#gold)"/>
+<text x="1335" y="300" class="sec">EXCEPTION PATH</text><text x="1335" y="341" class="h">Stock action</text>
+<text x="1335" y="376" class="b">• Damaged items → return handling</text><text x="1335" y="403" class="b">• Low / unavailable stock → request</text><text x="1335" y="430" class="b">• Manager coordinates next steps</text>
+<rect x="1335" y="453" width="360" height="25" rx="7" class="inner"/><text x="1515" y="470" text-anchor="middle" class="s">Exceptions &amp; replenishment</text>
+</g>
+<path d="M410 370 H480" class="line"/><path d="M820 370 H890" class="line"/><path d="M1230 370 H1300" class="dash"/>
+<text x="445" y="352" text-anchor="middle" class="s">Record</text><text x="855" y="352" text-anchor="middle" class="s">Verify</text><text x="1265" y="352" text-anchor="middle" class="s">Exception</text>
+<text x="80" y="555" class="sec">02 / ACCESS, OVERSIGHT &amp; VISIBILITY</text>
+<g filter="url(#shadow)">
+<rect x="80" y="590" width="500" height="220" rx="18" class="card"/><rect x="80" y="590" width="500" height="6" rx="3" fill="#778794"/>
+<text x="110" y="635" class="h">Admin</text><text x="110" y="670" class="b">• Oversees approximately 10 Warehouse Managers</text><text x="110" y="700" class="b">• Reviews warehouse inventory availability</text><text x="110" y="730" class="b">• Uses a focused operational dashboard</text><text x="110" y="780" class="s">Multi-warehouse oversight</text>
+<rect x="650" y="590" width="500" height="220" rx="18" class="card"/><rect x="650" y="590" width="500" height="6" rx="3" fill="url(#gold)"/>
+<text x="680" y="635" class="h">Super Admin</text><text x="680" y="670" class="b">• Views inventory across all warehouses</text><text x="680" y="700" class="b">• Checks item and shelf availability</text><text x="680" y="730" class="b">• Assigns roles and manages access</text><text x="680" y="780" class="s">Organization-wide visibility</text>
+<rect x="1220" y="590" width="500" height="220" rx="18" class="inner"/>
+<text x="1250" y="635" class="h">Design decision</text><text x="1250" y="670" class="b">Separate Admin and Super Admin scopes.</text><text x="1250" y="700" class="b">Reuse the Admin dashboard foundation for</text><text x="1250" y="730" class="b">Super Admin, adding cards and menus.</text><text x="1250" y="780" class="s">Broader control without duplicating the UI</text>
+</g>
+<path d="M580 700 H640" class="dash"/><path d="M1150 700 H1210" class="dash"/>
+<text x="80" y="865" class="sec">03 / REFINEMENTS FROM EMPLOYEE FEEDBACK</text>
+<rect x="80" y="900" width="760" height="155" rx="16" class="card"/>
+<circle cx="120" cy="944" r="16" fill="url(#gold)"/><path d="M113 944 l5 5 l10 -12" stroke="#171a1c" stroke-width="3" fill="none" stroke-linecap="round"/>
+<text x="155" y="942" class="h">Tablet reachability</text><text x="115" y="980" class="b">Some buttons were too far from employees’ fingers.</text><text x="115" y="1008" class="b">Button placement was adjusted on selected pages.</text>
+<rect x="880" y="900" width="840" height="155" rx="16" class="card"/>
+<circle cx="920" cy="944" r="16" fill="url(#gold)"/><path d="M913 944 l5 5 l10 -12" stroke="#171a1c" stroke-width="3" fill="none" stroke-linecap="round"/>
+<text x="955" y="942" class="h">Dense inventory tables</text><text x="915" y="980" class="b">Wide tables required horizontal scrolling to inspect details.</text><text x="915" y="1008" class="b">Selected views became wider cards for easier scanning.</text>
+<text x="80" y="1110" class="s">Portfolio note: functional UX/product-flow architecture based on the designer’s project description—not a verified technical system architecture.</text>
+<text x="80" y="1145" class="s">RADIANT / WAREHOUSE &amp; INVENTORY MANAGEMENT · PRODUCT DESIGN CASE STUDY</text><text x="1720" y="1145" text-anchor="end" class="s">CREATIVE SUN · SURYA DEVA SANGI</text>
+</svg>

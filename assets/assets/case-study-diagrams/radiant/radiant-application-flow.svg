@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1500" viewBox="0 0 2200 1500">
+<defs>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#536170"/></marker>
+  <marker id="arrowGold" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#C58A1B"/></marker>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#233044" flood-opacity=".12"/></filter>
+  <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.5" fill="#D8DDE3"/></pattern>
+  <style>
+    .title{font:700 42px Inter,Arial,sans-serif;fill:#202A35}
+    .subtitle{font:400 19px Inter,Arial,sans-serif;fill:#697586}
+    .laneTitle{font:700 20px Inter,Arial,sans-serif;fill:#243142}
+    .nodeTitle{font:700 17px Inter,Arial,sans-serif;fill:#243142}
+    .nodeText{font:400 14px Inter,Arial,sans-serif;fill:#445164}
+    .small{font:600 13px Inter,Arial,sans-serif;fill:#596678}
+    .stickyTitle{font:700 15px Inter,Arial,sans-serif;fill:#433B2B}
+    .stickyText{font:400 13px Inter,Arial,sans-serif;fill:#514A3C}
+    .line{fill:none;stroke:#536170;stroke-width:3;marker-end:url(#arrow);stroke-linecap:round;stroke-linejoin:round}
+    .goldLine{fill:none;stroke:#C58A1B;stroke-width:3.5;marker-end:url(#arrowGold);stroke-linecap:round;stroke-linejoin:round}
+  </style>
+</defs>
+<!-- board -->
+<rect width="2200" height="1500" fill="#F8F9FB"/>
+<rect width="2200" height="1500" fill="url(#dots)" opacity=".65"/>
+<!-- header -->
+<rect x="52" y="40" width="2096" height="130" rx="24" fill="#FFFFFF" stroke="#E3E7ED" filter="url(#shadow)"/>
+<circle cx="105" cy="91" r="23" fill="#F4C66A"/><circle cx="105" cy="91" r="12" fill="#D89520"/>
+<path d="M105 56v-8 M105 134v-8 M70 91h-8 M148 91h-8 M80 66l-6-6 M136 122l-6-6 M130 66l6-6 M74 122l6-6" stroke="#D89520" stroke-width="3" stroke-linecap="round"/>
+<text x="150" y="92" class="title">RADIANT · Application Flow</text>
+<text x="152" y="126" class="subtitle">FigJam-style product flow • Warehouse inventory operations • Role-based journeys</text>
+<rect x="1760" y="66" width="330" height="48" rx="24" fill="#FFF3D7" stroke="#E7C36C"/>
+<text x="1925" y="96" text-anchor="middle" class="small" fill="#805915">UX FLOW · WORKING MODEL</text>
+
+<!-- role bands -->
+<rect x="55" y="210" width="2090" height="225" rx="20" fill="#EAF4FF" stroke="#C9DFF8"/>
+<rect x="55" y="450" width="2090" height="260" rx="20" fill="#E9F7EF" stroke="#C6E9D4"/>
+<rect x="55" y="725" width="2090" height="245" rx="20" fill="#FFF3D9" stroke="#F0D99B"/>
+<rect x="55" y="985" width="2090" height="220" rx="20" fill="#F2ECFF" stroke="#DCCFF8"/>
+<rect x="55" y="1220" width="2090" height="205" rx="20" fill="#FCEAF0" stroke="#F2C9D6"/>
+
+<!-- lane labels -->
+<g>
+ <rect x="75" y="228" width="205" height="42" rx="12" fill="#D2E7FF"/><text x="177" y="255" text-anchor="middle" class="laneTitle">1 · Entry &amp; Access</text>
+ <rect x="75" y="468" width="205" height="42" rx="12" fill="#CFF0DC"/><text x="177" y="495" text-anchor="middle" class="laneTitle">2 · Floor Operations</text>
+ <rect x="75" y="743" width="205" height="42" rx="12" fill="#FFE6A8"/><text x="177" y="770" text-anchor="middle" class="laneTitle">3 · Stock Control</text>
+ <rect x="75" y="1003" width="205" height="42" rx="12" fill="#E2D6FF"/><text x="177" y="1030" text-anchor="middle" class="laneTitle">4 · Admin Oversight</text>
+ <rect x="75" y="1238" width="205" height="42" rx="12" fill="#F9D5E0"/><text x="177" y="1265" text-anchor="middle" class="laneTitle">5 · Organisation</text>
+</g>
+
+<!-- entry nodes -->
+<g filter="url(#shadow)">
+ <rect x="330" y="275" width="180" height="86" rx="16" fill="#FFFFFF" stroke="#80B9F2" stroke-width="2"/>
+ <rect x="565" y="275" width="210" height="86" rx="16" fill="#FFFFFF" stroke="#80B9F2" stroke-width="2"/>
+ <rect x="835" y="275" width="210" height="86" rx="16" fill="#FFFFFF" stroke="#80B9F2" stroke-width="2"/>
+ <rect x="1110" y="275" width="235" height="86" rx="16" fill="#FFFFFF" stroke="#80B9F2" stroke-width="2"/>
+ <rect x="1410" y="275" width="245" height="86" rx="16" fill="#FFFFFF" stroke="#80B9F2" stroke-width="2"/>
+ <rect x="1720" y="275" width="310" height="86" rx="16" fill="#D8EAFE" stroke="#80B9F2" stroke-width="2"/>
+</g>
+<text x="420" y="309" text-anchor="middle" class="nodeTitle">Open Radiant</text><text x="420" y="334" text-anchor="middle" class="nodeText">Launch application</text>
+<text x="670" y="309" text-anchor="middle" class="nodeTitle">Sign in</text><text x="670" y="334" text-anchor="middle" class="nodeText">Authenticate user</text>
+<text x="940" y="309" text-anchor="middle" class="nodeTitle">Identify role</text><text x="940" y="334" text-anchor="middle" class="nodeText">Permissions determine access</text>
+<text x="1227" y="309" text-anchor="middle" class="nodeTitle">Load role dashboard</text><text x="1227" y="334" text-anchor="middle" class="nodeText">Relevant tasks and data</text>
+<text x="1532" y="309" text-anchor="middle" class="nodeTitle">Choose work area</text><text x="1532" y="334" text-anchor="middle" class="nodeText">Based on assigned role</text>
+<text x="1875" y="309" text-anchor="middle" class="nodeTitle">Role-based journey begins</text><text x="1875" y="334" text-anchor="middle" class="nodeText">Access only permitted functions</text>
+<path d="M510 318H565 M775 318H835 M1045 318H1110 M1345 318H1410 M1655 318H1720" class="line"/>
+
+<!-- floor ops nodes -->
+<g filter="url(#shadow)">
+ <rect x="330" y="535" width="230" height="112" rx="16" fill="#FFFFFF" stroke="#75C49A" stroke-width="2"/>
+ <rect x="635" y="535" width="240" height="112" rx="16" fill="#FFFFFF" stroke="#75C49A" stroke-width="2"/>
+ <polygon points="1005,530 1080,591 1005,652 930,591" fill="#FFF9E9" stroke="#D6A42B" stroke-width="2"/>
+ <rect x="1145" y="535" width="220" height="112" rx="16" fill="#FFFFFF" stroke="#75C49A" stroke-width="2"/>
+ <rect x="1450" y="535" width="240" height="112" rx="16" fill="#FFFFFF" stroke="#75C49A" stroke-width="2"/>
+ <rect x="1760" y="535" width="260" height="112" rx="16" fill="#D5F2E0" stroke="#75C49A" stroke-width="2"/>
+</g>
+<text x="445" y="570" text-anchor="middle" class="nodeTitle">Receptionist</text><text x="445" y="594" text-anchor="middle" class="nodeText">Record incoming products</text><text x="445" y="615" text-anchor="middle" class="nodeText">Capture item / quantity</text>
+<text x="755" y="570" text-anchor="middle" class="nodeTitle">Supervisor review</text><text x="755" y="594" text-anchor="middle" class="nodeText">Check quantity and condition</text><text x="755" y="615" text-anchor="middle" class="nodeText">Confirm received goods</text>
+<text x="1005" y="585" text-anchor="middle" class="nodeTitle">Condition</text><text x="1005" y="605" text-anchor="middle" class="nodeTitle">acceptable?</text>
+<text x="1255" y="570" text-anchor="middle" class="nodeTitle">Assign storage</text><text x="1255" y="594" text-anchor="middle" class="nodeText">Choose warehouse / location</text><text x="1255" y="615" text-anchor="middle" class="nodeText">Update stock record</text>
+<text x="1570" y="570" text-anchor="middle" class="nodeTitle">Stock available</text><text x="1570" y="594" text-anchor="middle" class="nodeText">Item becomes visible</text><text x="1570" y="615" text-anchor="middle" class="nodeText">for inventory monitoring</text>
+<text x="1890" y="570" text-anchor="middle" class="nodeTitle">Warehouse Manager</text><text x="1890" y="594" text-anchor="middle" class="nodeText">Monitor incoming and</text><text x="1890" y="615" text-anchor="middle" class="nodeText">available stock</text>
+<path d="M445 435V500H445V535" class="line"/>
+<path d="M560 591H635 M875 591H930 M1080 591H1145 M1365 591H1450 M1690 591H1760" class="line"/>
+<text x="1105" y="574" class="small" fill="#2F7A4C">YES</text>
+<!-- no branch to exception -->
+<path d="M1005 652V685H900V690" fill="none" stroke="#C58A1B" stroke-width="3" stroke-linecap="round"/>
+<rect x="760" y="662" width="265" height="35" rx="10" fill="#FFF0C9" stroke="#E5C36A"/>
+<text x="892" y="684" text-anchor="middle" class="small">NO · Separate damaged goods</text>
+<path d="M1025 680H1048" fill="none" stroke="#C58A1B" stroke-width="3" marker-end="url(#arrowGold)"/>
+
+<!-- stock control -->
+<g filter="url(#shadow)">
+ <rect x="330" y="805" width="260" height="105" rx="16" fill="#FFFFFF" stroke="#E0BC58" stroke-width="2"/>
+ <polygon points="760,790 835,850 760,910 685,850" fill="#FFF9E9" stroke="#D6A42B" stroke-width="2"/>
+ <rect x="910" y="805" width="260" height="105" rx="16" fill="#FFFFFF" stroke="#E0BC58" stroke-width="2"/>
+ <rect x="1250" y="805" width="260" height="105" rx="16" fill="#FFFFFF" stroke="#E0BC58" stroke-width="2"/>
+ <rect x="1590" y="805" width="350" height="105" rx="16" fill="#FFEDB9" stroke="#E0BC58" stroke-width="2"/>
+</g>
+<text x="460" y="840" text-anchor="middle" class="nodeTitle">Review inventory levels</text><text x="460" y="864" text-anchor="middle" class="nodeText">Check available quantities</text><text x="460" y="885" text-anchor="middle" class="nodeText">and low / missing stock</text>
+<text x="760" y="845" text-anchor="middle" class="nodeTitle">Stock sufficient?</text><text x="760" y="866" text-anchor="middle" class="nodeText">For current demand</text>
+<text x="1040" y="840" text-anchor="middle" class="nodeTitle">Request replenishment</text><text x="1040" y="864" text-anchor="middle" class="nodeText">Raise request for new items</text><text x="1040" y="885" text-anchor="middle" class="nodeText">when low or unavailable</text>
+<text x="1380" y="840" text-anchor="middle" class="nodeTitle">Review request</text><text x="1380" y="864" text-anchor="middle" class="nodeText">Admin-level oversight</text><text x="1380" y="885" text-anchor="middle" class="nodeText">where applicable</text>
+<text x="1765" y="840" text-anchor="middle" class="nodeTitle">Maintain stock visibility</text><text x="1765" y="864" text-anchor="middle" class="nodeText">Available items and warehouse</text><text x="1765" y="885" text-anchor="middle" class="nodeText">inventory remain reviewable</text>
+<path d="M1890 647V760H460V805" class="line"/>
+<path d="M590 857H685" class="line"/>
+<path d="M835 850H910" class="goldLine"/><text x="858" y="835" class="small" fill="#946A0B">NO</text>
+<path d="M1170 857H1250 M1510 857H1590" class="line"/>
+<path d="M760 910V930H1765V910" fill="none" stroke="#536170" stroke-width="2.5" stroke-dasharray="8 7"/>
+<text x="870" y="925" class="small">YES · Continue normal monitoring</text>
+
+<!-- admin oversight -->
+<g filter="url(#shadow)">
+ <rect x="330" y="1065" width="300" height="95" rx="16" fill="#FFFFFF" stroke="#B6A0EE" stroke-width="2"/>
+ <rect x="730" y="1065" width="310" height="95" rx="16" fill="#FFFFFF" stroke="#B6A0EE" stroke-width="2"/>
+ <rect x="1140" y="1065" width="310" height="95" rx="16" fill="#FFFFFF" stroke="#B6A0EE" stroke-width="2"/>
+ <rect x="1550" y="1065" width="390" height="95" rx="16" fill="#E4DAFF" stroke="#B6A0EE" stroke-width="2"/>
+</g>
+<text x="480" y="1100" text-anchor="middle" class="nodeTitle">Admin dashboard</text><text x="480" y="1124" text-anchor="middle" class="nodeText">Oversee ~10 warehouse managers</text><text x="480" y="1145" text-anchor="middle" class="nodeText">Review inventory availability</text>
+<text x="885" y="1100" text-anchor="middle" class="nodeTitle">View warehouse status</text><text x="885" y="1124" text-anchor="middle" class="nodeText">Understand availability across</text><text x="885" y="1145" text-anchor="middle" class="nodeText">managed warehouse operations</text>
+<text x="1295" y="1100" text-anchor="middle" class="nodeTitle">Super Admin dashboard</text><text x="1295" y="1124" text-anchor="middle" class="nodeText">Organisation-wide visibility</text><text x="1295" y="1145" text-anchor="middle" class="nodeText">Across warehouses and items</text>
+<text x="1745" y="1100" text-anchor="middle" class="nodeTitle">Manage access</text><text x="1745" y="1124" text-anchor="middle" class="nodeText">Assign roles and permissions</text><text x="1745" y="1145" text-anchor="middle" class="nodeText">Keep role access appropriate</text>
+<path d="M480 1065V1015H480V910" class="line"/>
+<path d="M630 1112H730 M1040 1112H1140 M1450 1112H1550" class="line"/>
+
+<!-- bottom notes -->
+<g filter="url(#shadow)">
+ <rect x="330" y="1300" width="335" height="86" rx="5" fill="#FFF0A8" stroke="#E7D477"/>
+ <rect x="700" y="1300" width="335" height="86" rx="5" fill="#FFDDBB" stroke="#E8B88D"/>
+ <rect x="1070" y="1300" width="335" height="86" rx="5" fill="#D7F4D2" stroke="#A7D99F"/>
+ <rect x="1440" y="1300" width="500" height="86" rx="5" fill="#DCEBFF" stroke="#A9C9F0"/>
+</g>
+<text x="350" y="1326" class="stickyTitle">Design decision · Role separation</text><text x="350" y="1348" class="stickyText">Receptionist captures; Supervisor verifies.</text><text x="350" y="1368" class="stickyText">Distinct responsibilities reduce ambiguity.</text>
+<text x="720" y="1326" class="stickyTitle">Exception path</text><text x="720" y="1348" class="stickyText">Damaged goods are separated for return</text><text x="720" y="1368" class="stickyText">rather than stored as available stock.</text>
+<text x="1090" y="1326" class="stickyTitle">Feedback-driven refinement</text><text x="1090" y="1348" class="stickyText">Tablet actions repositioned for reach;</text><text x="1090" y="1368" class="stickyText">selected wide tables became cards.</text>
+<text x="1460" y="1326" class="stickyTitle">Scope note</text><text x="1460" y="1348" class="stickyText">Functional UX flow based on known product context.</text><text x="1460" y="1368" class="stickyText">Not a technical integration or API architecture.</text>
+
+<!-- connector from exception to note -->
+<path d="M900 697V730H600V790" fill="none" stroke="#C58A1B" stroke-width="2.5" stroke-dasharray="7 6"/>
+<text x="52" y="1465" class="subtitle">RADIANT · UX portfolio artifact · Editable SVG · Reconstructed flow from project notes</text>
+</svg>
