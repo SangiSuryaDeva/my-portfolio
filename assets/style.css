@@ -60,7 +60,9 @@ h3 {
 }
 
 .wrap {
-  width: min(var(--max), calc(100% - 44px));
+  /* width: min(var(--max), calc(100% - 44px)); */
+  max-width: 1366px;
+  padding: 0 25px;
   margin: auto
 }
 
