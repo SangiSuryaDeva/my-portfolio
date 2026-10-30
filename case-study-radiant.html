@@ -1,1 +1,291 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Radiant | Creative Sun</title><meta name="description" content="Radiant case study by Surya Deva Sangi, Senior UI/UX & Product Designer."><meta name="theme-color" content="#080a0c"><link rel="stylesheet" href="assets/style.css"></head><body><header class="wrap nav"><a class="brand" href="index.html"><span class="mark">☼</span><span>Creative <span class="gold">Sun</span></span></a><nav class="navlinks"><a class="" href="index.html">Home</a><a class="" href="about.html">About</a><a class="active" href="case-studies.html">Case Studies</a><a class="" href="services.html">Services</a><a class="" href="contact.html">Contact</a></nav><a class="btn primary" href="contact.html">Let’s Connect ↗</a><button class="menu-btn" aria-expanded="false">Menu ☰</button></header><main><section class="page-hero"><div class="wrap"><div class="crumb"><a href="case-studies.html">Case Studies</a> / Radiant</div><div class="eyebrow">Enterprise · Warehouse operations</div><h1>Designing a role-aware warehouse and inventory system from the ground up.</h1><p class="lead">A live internal warehouse-management product for a TV manufacturer producing for multiple brands. It connects receiving, quality checks, storage, replenishment, and organization-wide inventory visibility.</p><div class="pill-row"><span class="pill">Product design</span><span class="pill">Workflow design</span><span class="pill">End-to-end thinking</span></div></div></section><section class="section"><div class="wrap"><div class="case-art"><div class="eyebrow">Case study overview</div><h2>Radiant</h2><p>A live internal warehouse-management product for a TV manufacturer producing for multiple brands. It connects receiving, quality checks, storage, replenishment, and organization-wide inventory visibility.</p><div class="visual teal" aria-hidden="true"><div class="window"><div class="bar"></div><div class="ui"><div class="side"></div><div class="content"><div class="line"></div><div class="tiles"><i class="tile"></i><i class="tile"></i><i class="tile"></i></div><div class="tiles"><i class="tile"></i><i class="tile"></i><i class="tile"></i></div></div></div></div></div></div></div></section><section class="section"><div class="wrap content-grid"><article class="prose"><h2>Understanding the operation</h2><p>I worked from client meetings, documents, and stakeholder discussions. I reviewed requirements, mapped workflows in FigJam, returned with clarifying questions, and presented an application-architecture diagram before moving into screens.</p><h2>Making roles distinct</h2><p>The initial suggestion was that a receptionist could have the same access as a supervisor. I mapped the responsibilities to show why they needed different experiences: the receptionist records incoming products, while the supervisor checks quantity and condition, separates damaged items for return, and assigns storage. The client agreed after reviewing the architecture.</p><h2>Designing the hierarchy</h2><p>Warehouse managers oversee inventory operations and can request new items. Admins oversee multiple warehouse managers and warehouse availability. I proposed a separate Super Admin view for organization-wide visibility and role management. To manage delivery constraints, I reused the Admin dashboard structure and added the extra cards and menus needed for Super Admin.</p><h2>Designing for real devices</h2><p>Employees reported that some tablet buttons were too far from their fingers, so I adjusted button placement on affected pages. Wide tables also required too much horizontal scrolling, so I redesigned key views as cards that surfaced details more comfortably.</p><h2>Iterations and delivery</h2><p>I designed the core role experiences and presented them to the client. The Super Admin and role-management views received especially positive feedback. After a small number of iterations, the design was frozen and handed over for development; the product went live internally.</p><h2>Outcome</h2><p>A live internal warehouse and inventory system with role-aware workflows. No verified quantitative efficiency metrics are available, so the outcome is described in terms of delivered product scope rather than invented performance claims.</p><h2>My contribution</h2><p>End-to-end product design, workflow mapping, information architecture, role and permission thinking, interface design, iteration, and developer handoff.</p></article><aside><div class="sidebar"><h3>Project snapshot</h3><div class="meta"><div><strong>Product</strong><span>Radiant</span></div><div><strong>Engagement</strong><span>Live product</span></div><div><strong>Focus</strong><span>Enterprise · Warehouse operations</span></div><div><strong>Role</strong><span>UI/UX &amp; Product Design</span></div></div></div><div class="sidebar"><h3>Portfolio note</h3><p>No unverified metrics are included. Pair this story with approved visuals before publication.</p></div><a class="btn" href="case-studies.html">← All case studies</a></aside></div></section><section class="section"><div class="wrap"><div class="cta"><h2>Explore another<br><span class="gold">product challenge.</span></h2><p>See more selected work or get in touch to discuss a design opportunity.</p><a class="btn primary" href="case-studies.html">More case studies ↗</a><a class="btn" href="contact.html">Contact me</a></div></div></section></main><footer class="footer"><div class="wrap footer-row"><div class="brand"><span class="mark">☼</span>Creative <span class="gold">Sun</span><p>Surya Deva Sangi · Senior UI/UX &amp; Product Designer</p></div><div class="footer-links"><a href="case-studies.html">Work</a><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Project archive</a><a href="contact.html">Contact</a></div><small>© <span data-year></span> Surya Deva Sangi</small></div></footer><script src="assets/site.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Radiant | Creative Sun</title>
+    <meta name="description" content="Radiant case study by Surya Deva Sangi, Senior UI/UX & Product Designer.">
+    <meta name="theme-color" content="#080a0c">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <header class="wrap nav"><a class="brand" href="index.html"><span class="mark">☼</span><span>Creative <span
+                    class="gold">Sun</span></span></a>
+        <nav class="navlinks"><a class="" href="index.html">Home</a><a class="" href="about.html">About</a><a
+                class="active" href="case-studies.html">Case Studies</a><a class="" href="services.html">Services</a><a
+                class="" href="contact.html">Contact</a></nav><a class="btn primary" href="contact.html">Let’s Connect
+            ↗</a><button class="menu-btn" aria-expanded="false">Menu ☰</button>
+    </header>
+    <main>
+        <section class="page-hero">
+            <div class="wrap">
+                <div class="crumb"><a href="case-studies.html">Case Studies</a> / Radiant</div>
+                <div class="eyebrow">Enterprise · Warehouse operations</div>
+                <h1>Designing a role-aware warehouse and inventory system from the ground up.</h1>
+                <p class="lead">A live internal warehouse-management product for a TV manufacturer producing for
+                    multiple brands. It connects receiving, quality checks, storage, replenishment, and
+                    organization-wide inventory visibility.</p>
+                <div class="pill-row"><span class="pill">Product design</span><span class="pill">Workflow
+                        design</span><span class="pill">End-to-end thinking</span></div>
+            </div>
+        </section>
+         <article class="card featured" data-category="healthcare ai">
+            <div class="visual violet" aria-hidden="true">
+                <div class="window">
+                    <img class="img-responsive"
+                        src="assets/case-study-screens/radiant/02-warehouse-dashboard.png" />
+                </div>
+            </div>
+            <div class="copy"><span class="tag">Healthcare · AI</span>
+               <h2>Radiant</h2>
+                <p>A live internal warehouse-management product for a TV manufacturer producing for multiple brands.
+                    It connects receiving, quality checks, storage, replenishment, and organization-wide inventory
+                    visibility.</p>
+            </div>
+        </article>
+       
+        <section class="section">
+            <div class="wrap content-grid">
+                <article class="prose">
+                    <h2>Understanding the operation</h2>
+                    <p>I worked from client meetings, documents, and stakeholder discussions. I reviewed requirements,
+                        mapped workflows in FigJam, returned with clarifying questions, and presented an
+                        application-architecture diagram before moving into screens.</p>
+                    <h2>Making roles distinct</h2>
+                    <p>The initial suggestion was that a receptionist could have the same access as a supervisor. I
+                        mapped the responsibilities to show why they needed different experiences: the receptionist
+                        records incoming products, while the supervisor checks quantity and condition, separates damaged
+                        items for return, and assigns storage. The client agreed after reviewing the architecture.</p>
+                    <h2>Designing the hierarchy</h2>
+                    <p>Warehouse managers oversee inventory operations and can request new items. Admins oversee
+                        multiple warehouse managers and warehouse availability. I proposed a separate Super Admin view
+                        for organization-wide visibility and role management. To manage delivery constraints, I reused
+                        the Admin dashboard structure and added the extra cards and menus needed for Super Admin.</p>
+                    <h2>Designing for real devices</h2>
+                    <p>Employees reported that some tablet buttons were too far from their fingers, so I adjusted button
+                        placement on affected pages. Wide tables also required too much horizontal scrolling, so I
+                        redesigned key views as cards that surfaced details more comfortably.</p>
+                    <h2>Iterations and delivery</h2>
+                    <p>I designed the core role experiences and presented them to the client. The Super Admin and
+                        role-management views received especially positive feedback. After a small number of iterations,
+                        the design was frozen and handed over for development; the product went live internally.</p>
+                    <h2>Outcome</h2>
+                    <p>A live internal warehouse and inventory system with role-aware workflows. No verified
+                        quantitative efficiency metrics are available, so the outcome is described in terms of delivered
+                        product scope rather than invented performance claims.</p>
+                    <h2>My contribution</h2>
+                    <p>End-to-end product design, workflow mapping, information architecture, role and permission
+                        thinking, interface design, iteration, and developer handoff.</p>
+                </article>
+                <aside>
+                    <div class="sidebar">
+                        <h3>Project snapshot</h3>
+                        <div class="meta">
+                            <div><strong>Product</strong><span>Radiant</span></div>
+                            <div><strong>Engagement</strong><span>Live product</span></div>
+                            <div><strong>Focus</strong><span>Enterprise · Warehouse operations</span></div>
+                            <div><strong>Role</strong><span>UI/UX &amp; Product Design</span></div>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <h3>Portfolio note</h3>
+                        <p>No unverified metrics are included. Pair this story with approved visuals before publication.
+                        </p>
+                    </div><a class="btn" href="case-studies.html">← All case studies</a>
+                </aside>
+            </div>
+        </section>
+        <section class="section portfolio-story-section" id="project-context">
+            <div class="wrap">
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow">Project context</div>
+                        <h2>Overview &amp; design challenge.</h2>
+                    </div>
+                </div>
+                <div class="portfolio-context-grid">
+                    <article class="portfolio-context-card"><span class="tiny-label">01 / Overview</span>
+                        <p>A live internal warehouse and inventory management web application for a television
+                            manufacturer producing for multiple brands. It supports stock intake, inspection, storage,
+                            inventory visibility, and role-aware oversight.</p>
+                    </article>
+                    <article class="portfolio-context-card"><span class="tiny-label">02 / Problem to solve</span>
+                        <p>The workflow moved information from physical registers into a digital operation while
+                            supporting distinct responsibilities across Receptionist, Supervisor, Warehouse Manager,
+                            Admin, and Super Admin. The design needed to make handoffs and exceptions understandable
+                            without giving every role the same interface.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section portfolio-story-section" id="design-decisions">
+            <div class="wrap">
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow">Design rationale</div>
+                        <h2>Key design decisions.</h2>
+                    </div>
+                    <p class="muted">Grounded in the project details available for this portfolio.</p>
+                </div>
+                <div class="decision-grid">
+                    <div class="decision-card">
+                        <h3>Separate intake from inspection</h3>
+                        <p>Kept Receptionist and Supervisor responsibilities distinct after explaining the operational
+                            benefit to the client.</p>
+                    </div>
+                    <div class="decision-card">
+                        <h3>Reuse a dashboard foundation</h3>
+                        <p>Extended the Admin dashboard for Super Admin with additional oversight elements, balancing
+                            role needs with delivery effort.</p>
+                    </div>
+                    <div class="decision-card">
+                        <h3>Design for real devices</h3>
+                        <p>Moved tablet actions closer to users’ reach and converted selected wide tables into cards
+                            after employee feedback.</p>
+                    </div>
+                </div>
+                <div class="learning-panel">
+                    <div class="eyebrow">Outcome &amp; learning</div>
+                    <h3>What this work reinforced</h3>
+                    <p>Enterprise UX makes ownership, handoffs, and exceptions clear while respecting real device
+                        constraints and delivery timelines.</p>
+                    <p class="muted">Outcomes are described qualitatively; no unverified numerical impact is claimed.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="wrap">
+                <div class="cta">
+                    <h2>Explore another<br><span class="gold">product challenge.</span></h2>
+                    <p>See more selected work or get in touch to discuss a design opportunity.</p><a class="btn primary"
+                        href="case-studies.html">More case studies ↗</a><a class="btn" href="contact.html">Contact
+                        me</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="section portfolio-visual-section" id="screens">
+        <div class="wrap">
+            <div class="section-heading">
+                <div>
+                    <div class="eyebrow">Selected interface screens</div>
+                    <h2>Inside the product.</h2>
+                </div>
+                <p class="muted">Screens supplied for this case study. Select any image to open it at full size.</p>
+            </div>
+            <div class="portfolio-screen-grid">
+                <figure class="portfolio-screen-card"><a class="portfolio-screen-link"
+                        href="assets/case-study-screens/radiant/01-login-screen.png" target="_blank" rel="noopener"
+                        aria-label="Open Login screen image"><img loading="lazy"
+                            src="assets/case-study-screens/radiant/01-login-screen.png" alt="Login screen"></a>
+                    <figcaption><strong>Login screen</strong><span>Access point for the warehouse application.</span>
+                    </figcaption>
+                </figure>
+                <figure class="portfolio-screen-card"><a class="portfolio-screen-link"
+                        href="assets/case-study-screens/radiant/05-product-inspection-detail.png" target="_blank"
+                        rel="noopener" aria-label="Open Product inspection detail image"><img loading="lazy"
+                            src="assets/case-study-screens/radiant/05-product-inspection-detail.png"
+                            alt="Product inspection detail"></a>
+                    <figcaption><strong>Product inspection detail</strong><span>Detailed inspection view for an
+                            item.</span></figcaption>
+                </figure>
+                <figure class="portfolio-screen-card"><a class="portfolio-screen-link"
+                        href="assets/case-study-screens/radiant/08-reports-dashboard.png" target="_blank" rel="noopener"
+                        aria-label="Open Reports dashboard image"><img loading="lazy"
+                            src="assets/case-study-screens/radiant/08-reports-dashboard.png"
+                            alt="Reports dashboard"></a>
+                    <figcaption><strong>Reports dashboard</strong><span>Reporting and inventory visibility.</span>
+                    </figcaption>
+                </figure>
+                <figure class="portfolio-screen-card"><a class="portfolio-screen-link"
+                        href="assets/case-study-screens/radiant/02-warehouse-dashboard.png" target="_blank"
+                        rel="noopener" aria-label="Open Warehouse dashboard image"><img loading="lazy"
+                            src="assets/case-study-screens/radiant/02-warehouse-dashboard.png"
+                            alt="Warehouse dashboard"></a>
+                    <figcaption><strong>Warehouse dashboard</strong><span>Operational overview for warehouse
+                            work.</span></figcaption>
+                </figure>
+                <figure class="portfolio-screen-card"><a class="portfolio-screen-link"
+                        href="assets/case-study-screens/radiant/03-incoming-goods.png" target="_blank" rel="noopener"
+                        aria-label="Open Incoming goods image"><img loading="lazy"
+                            src="assets/case-study-screens/radiant/03-incoming-goods.png" alt="Incoming goods"></a>
+                    <figcaption><strong>Incoming goods</strong><span>Incoming stock entry and handling view.</span>
+                    </figcaption>
+                </figure>
+                <figure class="portfolio-screen-card"><a class="portfolio-screen-link"
+                        href="assets/case-study-screens/radiant/06-inventory-list.png" target="_blank" rel="noopener"
+                        aria-label="Open Inventory list image"><img loading="lazy"
+                            src="assets/case-study-screens/radiant/06-inventory-list.png" alt="Inventory list"></a>
+                    <figcaption><strong>Inventory list</strong><span>Inventory records in a structured table.</span>
+                    </figcaption>
+                </figure>
+                <figure class="portfolio-screen-card"><a class="portfolio-screen-link"
+                        href="assets/case-study-screens/radiant/04-quality-inspection-queue.png" target="_blank"
+                        rel="noopener" aria-label="Open Quality inspection queue image"><img loading="lazy"
+                            src="assets/case-study-screens/radiant/04-quality-inspection-queue.png"
+                            alt="Quality inspection queue"></a>
+                    <figcaption><strong>Quality inspection queue</strong><span>Queue for checking incoming product
+                            condition.</span></figcaption>
+                </figure>
+                <figure class="portfolio-screen-card"><a class="portfolio-screen-link"
+                        href="assets/case-study-screens/radiant/07-stock-transfer-request.png" target="_blank"
+                        rel="noopener" aria-label="Open Stock transfer request image"><img loading="lazy"
+                            src="assets/case-study-screens/radiant/07-stock-transfer-request.png"
+                            alt="Stock transfer request"></a>
+                    <figcaption><strong>Stock transfer request</strong><span>Request flow for moving stock.</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="section portfolio-visual-section portfolio-diagrams-section" id="architecture">
+        <div class="wrap">
+            <div class="section-heading">
+                <div>
+                    <div class="eyebrow">Product thinking</div>
+                    <h2>From structure to flow.</h2>
+                </div>
+                <p class="muted">Application flow and architecture diagrams created for this portfolio reconstruction.
+                </p>
+            </div>
+            <div class="portfolio-diagram-grid">
+                <figure class="portfolio-diagram-card"><a
+                        href="assets/case-study-diagrams/radiant/radiant-application-flow.svg" target="_blank"
+                        rel="noopener" aria-label="Open editable Application flow diagram"><img loading="lazy"
+                            src="assets/case-study-diagrams/radiant/radiant-application-flow-preview.png"
+                            alt="Radiant application flow"></a>
+                    <figcaption><strong>Radiant application flow</strong><span>Application flow · Open diagram in a new
+                            tab; SVG is editable in vector tools.</span><a class="text-link"
+                            href="assets/case-study-diagrams/radiant/radiant-application-flow.svg" target="_blank"
+                            rel="noopener">Open editable SVG ↗</a></figcaption>
+                </figure>
+                <figure class="portfolio-diagram-card"><a
+                        href="assets/case-study-diagrams/radiant/radiant-flow-architecture.svg" target="_blank"
+                        rel="noopener" aria-label="Open editable Application architecture diagram"><img loading="lazy"
+                            src="assets/case-study-diagrams/radiant/radiant-flow-architecture.svg"
+                            alt="Radiant application architecture"></a>
+                    <figcaption><strong>Radiant application architecture</strong><span>Application architecture · Open
+                            diagram in a new tab; SVG is editable in vector tools.</span><a class="text-link"
+                            href="assets/case-study-diagrams/radiant/radiant-flow-architecture.svg" target="_blank"
+                            rel="noopener">Open editable SVG ↗</a></figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrap footer-row">
+            <div class="brand"><span class="mark">☼</span>Creative <span class="gold">Sun</span>
+                <p>Surya Deva Sangi · Senior UI/UX &amp; Product Designer</p>
+            </div>
+            <div class="footer-links"><a href="case-studies.html">Work</a><a href="about.html">About</a><a
+                    href="services.html">Services</a><a href="projects.html">Project archive</a><a
+                    href="contact.html">Contact</a></div><small>© <span data-year></span> Surya Deva Sangi</small>
+        </div>
+    </footer>
+    <script src="assets/site.js"></script>
+</body>
+
+</html>
