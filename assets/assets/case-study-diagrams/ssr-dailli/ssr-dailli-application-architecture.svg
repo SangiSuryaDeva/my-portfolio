@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1260" viewBox="0 0 2200 1260">
+<defs><pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#D9DFE7"/></pattern><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#334155" flood-opacity=".10"/></filter><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#64748B"/></marker><style>.h1{font:700 34px Inter,Arial,sans-serif;fill:#1F2937}.sub{font:400 17px Inter,Arial,sans-serif;fill:#64748B}.lane{font:700 18px Inter,Arial,sans-serif;fill:#263449}.head{font:700 15px Inter,Arial,sans-serif;fill:#263449}.body{font:400 12px Inter,Arial,sans-serif;fill:#536176}.edge{fill:none;stroke:#64748B;stroke-width:2.7;marker-end:url(#arrow);stroke-linecap:round}</style></defs>
+<rect width="100%" height="100%" fill="#F8FAFC"/><rect width="100%" height="100%" fill="url(#dots)"/>
+<rect x="38" y="25" width="2124" height="105" rx="20" fill="#FFF" stroke="#E2E8F0" filter="url(#shadow)"/><circle cx="82" cy="68" r="20" fill="#DDF3EF"/><path d="M73 68h18M82 59v18" stroke="#249B91" stroke-width="3.5" stroke-linecap="round"/><text x="122" y="67" class="h1">SSR Dailli — Application Architecture</text><text x="124" y="99" class="sub">Four connected experiences across commerce, delivery, distribution, and order routing</text>
+<rect x="38" y="150.0" width="2124" height="255.5" rx="18" fill="#EEF5FF" stroke="#80A9E5" stroke-opacity=".65"/>
+<rect x="56" y="165.0" width="330" height="38" rx="10" fill="#DCEBFF"/><text x="221" y="190.0" text-anchor="middle" class="lane">1 · Customer surface</text>
+<rect x="808.0" y="220.0" width="300.0" height="96.0" rx="13" fill="#FFF" stroke="#80A9E5" stroke-width="1.8" filter="url(#shadow)"/>
+<text x="958.0" y="247.0" text-anchor="middle" class="head">SSR Dailli app</text>
+<text x="958.0" y="269.0" text-anchor="middle" class="body">Customer dairy</text>
+<text x="958.0" y="285.0" text-anchor="middle" class="body">product booking</text>
+<path d="M1108.0 268.0H1124.0" class="edge"/>
+<rect x="1130.0" y="220.0" width="300.0" height="96.0" rx="13" fill="#FFF" stroke="#80A9E5" stroke-width="1.8" filter="url(#shadow)"/>
+<text x="1280.0" y="247.0" text-anchor="middle" class="head">Recurring orders</text>
+<text x="1280.0" y="269.0" text-anchor="middle" class="body">Monthly booking for</text>
+<text x="1280.0" y="285.0" text-anchor="middle" class="body">daily milk delivery</text>
+<path d="M1430.0 268.0H1446.0" class="edge"/>
+<rect x="1452.0" y="220.0" width="300.0" height="96.0" rx="13" fill="#FFF" stroke="#80A9E5" stroke-width="1.8" filter="url(#shadow)"/>
+<text x="1602.0" y="247.0" text-anchor="middle" class="head">Order information</text>
+<text x="1602.0" y="269.0" text-anchor="middle" class="body">Customer demand enters</text>
+<text x="1602.0" y="285.0" text-anchor="middle" class="body">the ecosystem</text>
+<rect x="38" y="417.5" width="2124" height="255.5" rx="18" fill="#EAF8F5" stroke="#74C6BA" stroke-opacity=".65"/>
+<rect x="56" y="432.5" width="330" height="38" rx="10" fill="#D4F0EA"/><text x="221" y="457.5" text-anchor="middle" class="lane">2 · Central web layer</text>
+<rect x="808.0" y="487.5" width="300.0" height="96.0" rx="13" fill="#FFF" stroke="#74C6BA" stroke-width="1.8" filter="url(#shadow)"/>
+<text x="958.0" y="514.5" text-anchor="middle" class="head">Order intake</text>
+<text x="958.0" y="536.5" text-anchor="middle" class="body">Receives customer</text>
+<text x="958.0" y="552.5" text-anchor="middle" class="body">orders</text>
+<path d="M1108.0 535.5H1124.0" class="edge"/>
+<rect x="1130.0" y="487.5" width="300.0" height="96.0" rx="13" fill="#FFF" stroke="#74C6BA" stroke-width="1.8" filter="url(#shadow)"/>
+<text x="1280.0" y="514.5" text-anchor="middle" class="head">Order distribution</text>
+<text x="1280.0" y="536.5" text-anchor="middle" class="body">Sends orders to</text>
+<text x="1280.0" y="552.5" text-anchor="middle" class="body">distributors</text>
+<path d="M1430.0 535.5H1446.0" class="edge"/>
+<rect x="1452.0" y="487.5" width="300.0" height="96.0" rx="13" fill="#FFF" stroke="#74C6BA" stroke-width="1.8" filter="url(#shadow)"/>
+<text x="1602.0" y="514.5" text-anchor="middle" class="head">Operational bridge</text>
+<text x="1602.0" y="536.5" text-anchor="middle" class="body">Connects demand with</text>
+<text x="1602.0" y="552.5" text-anchor="middle" class="body">supply planning</text>
+<rect x="38" y="685.0" width="2124" height="255.5" rx="18" fill="#F2F5FB" stroke="#A6B7D3" stroke-opacity=".65"/>
+<rect x="56" y="700.0" width="330" height="38" rx="10" fill="#E1E8F3"/><text x="221" y="725.0" text-anchor="middle" class="lane">3 · Delivery &amp; distributor</text>
+<rect x="808.0" y="755.0" width="300.0" height="96.0" rx="13" fill="#FFF" stroke="#A6B7D3" stroke-width="1.8" filter="url(#shadow)"/>
+<text x="958.0" y="782.0" text-anchor="middle" class="head">SSR Delivery</text>
+<text x="958.0" y="804.0" text-anchor="middle" class="body">Area assignment</text>
+<text x="958.0" y="820.0" text-anchor="middle" class="body">pickup / delivery OTP</text>
+<path d="M1108.0 803.0H1124.0" class="edge"/>
+<rect x="1130.0" y="755.0" width="300.0" height="96.0" rx="13" fill="#FFF" stroke="#A6B7D3" stroke-width="1.8" filter="url(#shadow)"/>
+<text x="1280.0" y="782.0" text-anchor="middle" class="head">SSR Distributors</text>
+<text x="1280.0" y="804.0" text-anchor="middle" class="body">Order quantities and</text>
+<text x="1280.0" y="820.0" text-anchor="middle" class="body">demand planning</text>
+<path d="M1430.0 803.0H1446.0" class="edge"/>
+<rect x="1452.0" y="755.0" width="300.0" height="96.0" rx="13" fill="#FFF" stroke="#A6B7D3" stroke-width="1.8" filter="url(#shadow)"/>
+<text x="1602.0" y="782.0" text-anchor="middle" class="head">Accountability</text>
+<text x="1602.0" y="804.0" text-anchor="middle" class="body">Payments, balances,</text>
+<text x="1602.0" y="820.0" text-anchor="middle" class="body">crates and empties</text>
+<rect x="38" y="952.5" width="2124" height="255.5" rx="18" fill="#FFF6E3" stroke="#E1BD59" stroke-opacity=".65"/>
+<rect x="56" y="967.5" width="330" height="38" rx="10" fill="#FFE9B9"/><text x="221" y="992.5" text-anchor="middle" class="lane">4 · Shared product needs</text>
+<rect x="808.0" y="1022.5" width="300.0" height="96.0" rx="13" fill="#FFF" stroke="#E1BD59" stroke-width="1.8" filter="url(#shadow)"/>
+<text x="958.0" y="1049.5" text-anchor="middle" class="head">Order continuity</text>
+<text x="958.0" y="1071.5" text-anchor="middle" class="body">Customer request to</text>
+<text x="958.0" y="1087.5" text-anchor="middle" class="body">distribution</text>
+<path d="M1108.0 1070.5H1124.0" class="edge"/>
+<rect x="1130.0" y="1022.5" width="300.0" height="96.0" rx="13" fill="#FFF" stroke="#E1BD59" stroke-width="1.8" filter="url(#shadow)"/>
+<text x="1280.0" y="1049.5" text-anchor="middle" class="head">Delivery confirmation</text>
+<text x="1280.0" y="1071.5" text-anchor="middle" class="body">Pickup and destination</text>
+<text x="1280.0" y="1087.5" text-anchor="middle" class="body">OTP checkpoints</text>
+<path d="M1430.0 1070.5H1446.0" class="edge"/>
+<rect x="1452.0" y="1022.5" width="300.0" height="96.0" rx="13" fill="#FFF" stroke="#E1BD59" stroke-width="1.8" filter="url(#shadow)"/>
+<text x="1602.0" y="1049.5" text-anchor="middle" class="head">Operational visibility</text>
+<text x="1602.0" y="1071.5" text-anchor="middle" class="body">Payment and crate</text>
+<text x="1602.0" y="1087.5" text-anchor="middle" class="body">tracking</text>
+<text x="40" y="1242" class="sub" style="font-size:13px">Portfolio reconstruction from project context · Functional view, not a verified technical implementation</text></svg>
